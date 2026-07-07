@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-law-navy: #0b131f;
+  --color-law-slate: #162235;
+  --color-law-gold: #c5a880;
+  --color-law-gold-hover: #b69d74;
+  --color-law-gold-light: #f5f1ea;
+  --color-law-bg-light: #FAF9F6;
+  --color-law-text-muted: #5e6675;
+}
+
+/* Custom styles for luxury transitions and layouts */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-law-bg-light);
+  color: #1a1f26;
+  overflow-x: hidden;
+}
+
+/* Custom class for beautiful decorative gold divider */
+.gold-divider {
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--color-law-gold), transparent);
+  margin: 1rem auto;
+}
+
+.gold-divider-left {
+  height: 2px;
+  width: 60px;
+  background: linear-gradient(90deg, var(--color-law-gold), transparent);
+  margin: 1rem 0;
+}
+
+/* Form inputs styling */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(197, 168, 128, 0.2);
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--color-law-gold);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 2px rgba(197, 168, 128, 0.15);
+}
+
+/* Button glow/premium hover states */
+.btn-gold {
+  background: linear-gradient(135deg, #c5a880 0%, #b69d74 100%);
+  color: #0b131f;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(197, 168, 128, 0.2);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(197, 168, 128, 0.35);
+}
