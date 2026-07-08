@@ -7,27 +7,19 @@ export default function HeroSlider() {
 
   const slides = [
     {
-      subtitle: 'Welcome to',
-      title: 'Vanguard Legal',
-      desc: 'We are a leading law firm in the financial & corporate industry, backed by more than 20 years of legal excellence.',
+      subtitle: 'Welcome to the Chambers of',
+      title: 'Adv. Aarav Malhotra',
+      desc: 'Senior Counsel representing clients with dedicated advocacy, deep legal research, and absolute integrity before the Supreme Court of India.',
       bg: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1800&q=80',
-      btnText: 'Contact Now',
+      btnText: 'Contact Chambers',
       btnLink: '/contact',
     },
     {
-      subtitle: 'Professional',
-      title: 'Law Firm',
-      desc: 'We are a leading law firm in financial & business industry. With more than 20 years of experience',
+      subtitle: 'Specializing In',
+      title: 'Corporate & Civil Litigation',
+      desc: 'Expert representation in NCLT boardroom disputes, corporate contract compliance audits, international arbitrations, and property succession disputes.',
       bg: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1800&q=80',
-      btnText: 'Contact Now',
-      btnLink: '/contact',
-    },
-    {
-      subtitle: 'Committed to',
-      title: 'Legal Excellence',
-      desc: 'Providing tailored, high-caliber representation and advisory services to corporations, families, and individuals.',
-      bg: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1800&q=80',
-      btnText: 'Our Practices',
+      btnText: 'Our Specializations',
       btnLink: '/practice-areas',
     },
   ];

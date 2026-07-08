@@ -1,36 +1,40 @@
 import React from 'react';
 import { Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import image1 from '../assets/image1.jpg';
+import image2 from '../assets/image2.jpg';
+import image3 from '../assets/image3.jpg';
+import image4 from '../assets/image4.jpg';
 
 export default function Attorneys() {
   const attorneysList = [
     {
-      name: 'Jack Smith',
+      name: 'Adv. Aarav Malhotra',
       role: 'Senior Founding Partner',
-      specialty: 'Corporate Law & M&A',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=500&q=80',
-      bio: 'Over 25 years of corporate legal service, representing Fortune 500 corporations and steering major commercial mergers.'
+      specialty: 'Supreme Court & Arbitrations',
+      image: image1,
+      bio: 'Over 22 years of trial and appellate practice, successfully protecting clients\' corporate and private assets across India.'
     },
     {
-      name: 'Marisa Goldberg',
+      name: 'Adv. Vikram Sen',
       role: 'Partner Attorney',
-      specialty: 'Banking & Financial Litigation',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=500&q=80',
-      bio: 'Aggressive and focused representative for corporate banking boards and global financial houses.'
+      specialty: 'Banking & Finance Disputes',
+      image: image2,
+      bio: 'Over 14 years of banking litigation experience. Advises leading Indian banks and corporate boards on debt recovery, SARFAESI matters, and NCLT claims.'
     },
     {
-      name: 'Kevin Stiller',
+      name: 'Adv. Rohan Joshi',
       role: 'Senior Counsel',
-      specialty: 'Civil Advocacy & Torts',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=500&q=80',
-      bio: 'A veteran litigator with a distinguished record in civil claims, commercial mediation, and federal appeals.'
+      specialty: 'Civil & Property Disputes',
+      image: image3,
+      bio: 'A seasoned trial and appellate advocate with an exceptional record of resolving complex ancestral property partition suits and contract breaches in Delhi.'
     },
     {
-      name: 'Eric Peterson',
+      name: 'Adv. Ananya Nair',
       role: 'Associate Attorney',
-      specialty: 'Family Law & Estates',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=500&q=80',
-      bio: 'Providing comprehensive counsel on wealth succession, estate planning, and sensitive family litigations.'
+      specialty: 'Family Law & Successions',
+      image: image4,
+      bio: 'Specializes in executing family succession deeds, drafting estate partitions, and managing domestic arbitration disputes with high confidentiality.'
     }
   ];
 
@@ -68,7 +72,7 @@ export default function Attorneys() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-law-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6">
                   <a 
-                    href={`mailto:${attorney.name.toLowerCase().replace(' ', '')}@vanguardlegal.com`}
+                    href={`mailto:${attorney.name.toLowerCase().replace(' ', '').replace('adv.', '')}@aaravmalhotra.in`}
                     className="bg-law-gold text-law-navy p-3 rounded-full hover:bg-law-gold-hover hover:scale-105 transition-all duration-200"
                     title="Send Email"
                   >

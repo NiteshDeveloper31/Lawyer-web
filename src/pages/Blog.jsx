@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronRight, Calendar, User, Clock, ArrowRight, Search, Tag } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import disputeResolutionImg from '../assets/Dispute Resolution.jpg';
 
 const posts = [
   {
@@ -35,7 +36,7 @@ const posts = [
     date: 'March 18, 2026',
     author: 'Adv. Aarav Malhotra',
     readTime: '7 Min Read',
-    image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
+    image: disputeResolutionImg,
     desc: 'Indemnity clauses, limitation of liability, and force majeure terms dictate contract security. We outline vital checkpoints that corporate compliance officers must analyze before signing vendor contracts.',
     tags: ['Contract Law', 'Corporate Advisory', 'Liability']
   }

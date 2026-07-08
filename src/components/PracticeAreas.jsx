@@ -1,47 +1,50 @@
 import React from 'react';
 import { Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import carAccedent from '../assets/carAccedent.jpg';
+import familyDisputeLaw from '../assets/familyDisputeLaw.jpg';
+import disputeResolution from '../assets/Dispute Resolution.jpg';
 
 export default function PracticeAreas() {
   const practices = [
     {
       title: 'Banking & Financial',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=400&h=300&q=80',
+      image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=400&h=300&q=80',
       link: '/practice-areas/banking'
     },
     {
       title: 'Car Accident Claims',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=300&q=80',
+      image: carAccedent,
       link: '/practice-areas/car-accident'
     },
     {
       title: 'Personal Injury',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=300&q=80',
+      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&h=300&q=80',
       link: '/practice-areas/personal-injury'
     },
     {
       title: 'Family Dispute Law',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=300&q=80',
+      image: familyDisputeLaw,
       link: '/practice-areas/family-law'
     },
     {
       title: 'Capital Markets',
-      image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=400&h=300&q=80',
+      image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=400&h=300&q=80',
       link: '/practice-areas/capital-markets'
     },
     {
       title: 'Employment Law',
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&h=300&q=80',
+      image: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=400&h=300&q=80',
       link: '/practice-areas/employment'
     },
     {
       title: 'Corporate Advisory',
-      image: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=400&h=300&q=80',
+      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&h=300&q=80',
       link: '/practice-areas/corporate'
     },
     {
       title: 'Dispute Resolution',
-      image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=400&h=300&q=80',
+      image: disputeResolution,
       link: '/practice-areas/disputes'
     }
   ];
