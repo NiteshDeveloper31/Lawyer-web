@@ -7,7 +7,8 @@ export default function Footer() {
 
   const overviewLinks = [
     { name: 'Practice Specializations', path: '/practice-areas' },
-    { name: 'Proven Case Studies', path: '/case-studies' },
+    { name: 'Chamber Services Offerings', path: '/services' },
+    { name: 'Portfolio', path: '/portfolio' },
     { name: 'Chamber Insights Blog', path: '/blog' },
     { name: 'Meet Our Associates', path: '/attorneys' },
     { name: 'Contact Chambers', path: '/contact' }
